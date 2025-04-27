@@ -1,0 +1,2 @@
+# ignore all node modules in the frontend folder
+/frontend/node_modules/
