@@ -1,13 +1,17 @@
 # Liquid-Prediction-Markets
 
 
-Short Summary 
+# Demo Video Link
+
+https://www.loom.com/share/7eeda0a5df244eb38c5f36d9fad85afe?sid=ce80d574-f59c-4a04-8303-636759d7861e
+
+# Short Summary 
 Liquid Prediction Markets enables real-time trading of probability-based assets on Polkadot, allowing positions to be bought and sold before events resolve.
 
-Full Project Description
+#Full Project Description
 Traditional prediction markets suffer from critical limitations that prevent widespread adoption. Once a user makes a prediction, they are locked into their position until the event resolves - sometimes months or years later. This creates illiquid markets where capital is inefficiently allocated, prices don't accurately reflect real-time sentiment, and users have no way to exit positions as new information emerges. Additionally, most platforms only support binary yes/no outcomes, ignoring the nuanced probabilities of real-world events.
 
-Solution
+# Solution
 Liquid Prediction Markets transforms predictions into tradable financial instruments with dynamic pricing. Our platform allows users to:
 
 1. Create customizable prediction markets with any question
@@ -19,17 +23,21 @@ Liquid Prediction Markets transforms predictions into tradable financial instrum
 This creates a new financial primitive for risk management and forecasting, with applications across finance, insurance, governance, and sports betting.
 
 
-How Polkadot Was Used
-Polkadot Asset Hub provides the ideal infrastructure for Liquid Prediction Markets:
+# How Polkadot Was Used
 
-1. The platform leverages Polkadot's smart contract capabilities to create a secure, decentralized prediction market system
-2. Asset Hub's cross-chain functionality enables future integration with external data oracles for market resolution
-3. Polkadot's transaction speed and low fees make micro-predictions economically viable
-4. The interoperability features will eventually allow markets to span multiple blockchains, increasing liquidity
-5. The security of Polkadot's shared consensus model protects market integrity and user funds
+Our Liquid Prediction Markets implementation specifically leverages Polkadot Asset Hub in the following ways:
 
+1. Smart Contract Deployment: We deployed our custom PredictionMarket smart contract to Polkadot Asset Hub Westend, utilizing the platform's Solidity compatibility layer
 
-Technical Description1. 
+2. UI Integration: Our frontend directly connects to the Polkadot network via the "Connect to Polkadot" functionality, displaying real-time blockchain connection status and contract information 
+
+3. Transaction Processing: The platform uses Polkadot's transaction infrastructure for market creation, position buying, and position selling, leveraging MetaMask integration for seamless signing
+
+4. Testnet Validation: We utilized Asset Hub Westend testnet for development, allowing us to validate the entire workflow without spending real DOT while maintaining identical functionality
+
+5. Contract State Storage: Our market data, user positions, and transaction history are all persisted on Polkadot's state storage, providing decentralized and immutable record-keeping
+
+# Technical Description. 
 1. React.js for the frontend interface and dynamic visualizations
 2. Chart.js for real-time probability visualizations
 3. Polkadot.js API for blockchain interaction
@@ -40,7 +48,7 @@ Technical Description1.
 
 
 
-Polkadot Features Utilized
+# Polkadot Features Utilized
 Liquid Prediction Markets takes advantage of several unique Polkadot features:
 
 1. Polkadot Asset Hub's EVM compatibility allowed us to deploy Solidity contracts while benefiting from Polkadot's security model
@@ -72,8 +80,67 @@ Images
 
 ![Live Price Chart](images/live_pricechart.png)
 
+# Block Explorer link for deployed smart contract 
+https://blockscout-asset-hub.parity-chains-scw.parity.io/address/0x8a0077f4C27C2084aD4Ac3BD9eA1EB0fBcCf0AD8
+
+# Presentation link
+https://www.canva.com/design/DAGl1T_AmiM/ND507YpXNufRTVSGrZfq7w/edit?utm_content=DAGl1T_AmiM&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+# Setup & Installation
+# Prerequisites
+
+Node.js (v16+)
+npm or yarn
+MetaMask browser extension
+
+
+# Installation
+
+Clone the repository
+git clone https://github.com/your-username/liquid-prediction-markets.git
+cd liquid-prediction-markets
+
+Install dependencies
+npm install
+
+
+
+# Usage
+
+Connect to Polkadot
+
+Click "Connect to Polkadot" button
+Approve the connection in MetaMask
+
+
+Create a Market
+
+Fill in the question, resolution date, and initial liquidity
+Click "Create Market" and confirm the transaction in MetaMask
+
+
+Buy a Position
+
+Select a market from the list
+Choose YES or NO position
+Enter the amount in DOT
+Click "Buy Position" and confirm the transaction
+
+
+Sell a Position
+
+Select a market where you have a position
+Choose the position type (YES/NO)
+Enter the amount to sell
+Click "Sell Position" and confirm the transaction
+
+Start the development server
+npm start
+The application will be available at http://localhost:3000
+
 
 # I understand that certain clean code practices have not been followed while coding for this project.
-# I am an solo coder coding this project and due to the time constraints I was not able to follow the best clean coding practices.
+# I am an solo coder coding this project due to the time constraints I was not able to follow the best clean coding practices.
 
 
