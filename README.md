@@ -3,7 +3,7 @@
 
 # Demo Video Link
 
-https://www.loom.com/share/7eeda0a5df244eb38c5f36d9fad85afe?sid=ce80d574-f59c-4a04-8303-636759d7861e
+https://www.loom.com/share/d7d73c47d5424b08b8d1a9d60adc5ab0?sid=0ac430bb-2f10-49e2-8577-0d7e706bc371
 
 # Short Summary 
 Liquid Prediction Markets enables real-time trading of probability-based assets on Polkadot, allowing positions to be bought and sold before events resolve.
