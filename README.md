@@ -74,6 +74,6 @@ Images
 
 
 # I understand that certain clean code practices have not been followed while coding for this project.
-# I am an solo coder coding this project due to the time constraints I was not able to follow the best clean coding practices.
+# I am an solo coder coding this project and due to the time constraints I was not able to follow the best clean coding practices.
 
 
