@@ -1,0 +1,26 @@
+[package]
+name = "prediction_market"
+version = "0.1.0"
+edition = "2021"
+authors = ["Your Name <ankithsvaidya@gmail.com>"]
+
+[dependencies]
+ink = { version = "4.2.0", default-features = false }
+scale = { package = "parity-scale-codec", version = "3.6.5", default-features = false, features = ["derive"] }
+scale-info = { version = "2.9.0", default-features = false, features = ["derive"] }
+
+[dev-dependencies]
+ink_e2e = "4.2.0"
+
+[lib]
+path = "lib.rs"
+
+[features]
+default = ["std"]
+std = [
+    "ink/std",
+    "scale/std",
+    "scale-info/std",
+]
+ink-as-dependency = []
+e2e-tests = []
