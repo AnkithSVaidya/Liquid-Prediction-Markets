@@ -140,7 +140,7 @@ npm start
 The application will be available at http://localhost:3000
 
 
-# I understand that certain clean code practices have not been followed while coding for this project.
-# I am an solo coder coding this project due to the time constraints I was not able to follow the best clean coding practices.
+
+
 
 
